@@ -2,6 +2,16 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import tw from 'tailwind-styled-components'
+
+const Container = tw.div`
+    flex
+    items-center
+    justify-center
+    flex-col
+    w-full
+    bg-indigo-600
+`
 
 const Home: NextPage = () => {
     return (
@@ -13,6 +23,10 @@ const Home: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
+                <Container>
+                    <h1 className='text-5xl'>Hello World</h1>
+                    <span>abcdefg</span>
+                </Container>
                 <h1 className='text-5xl'>
                     Welcome to <a href='https://nextjs.org'>Next.js!</a>
                 </h1>

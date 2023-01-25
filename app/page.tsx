@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import tw from 'tailwind-styled-components'
+import '../styles/custom.css'
 
 const Container = tw.div`
     flex
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
     return (
         <div>
             <Container>
-                <h1 className='text-5xl'>Hello 인생스킬</h1>
+                <h1 className='c-skill text-5xl'>Hello 인생스킬</h1>
             </Container>
 
             <footer>
